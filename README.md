@@ -1,6 +1,5 @@
 # temp-humidity-tracker-esp32-i2c
-Live temperature &amp; humidity tracking using an ESP32 with an I2C sensor.
-
+Live temperature & humidity tracking using a microcontroller with an I2C temperature and humidity sensor.
 
 ##live_plotting
 
@@ -10,4 +9,6 @@ The LivePlotter class is very flexible, so if the user adds more sensors and fun
 
 ##microcontroller_files
 
-After flashing MicroPython onto your microcontroller (this repo was made specifically for an ESP32, but any micocontroller with MicroPython should also work), copy these files onto the microcontroller. I reccomend using Thonny to do this, as it is the easiest method.
+After flashing MicroPython onto your microcontroller (this repo was made specifically with an ESP32, but most micocontrollers should also work with little issue), copy these files onto the microcontroller. I reccomend using Thonny to do this, as it is the easiest method.
+
+You may need to change main.py to the address of your I2C sensor and the SDA/SCL pins you are using on your microcontroller.
