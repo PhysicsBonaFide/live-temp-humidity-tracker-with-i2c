@@ -1,4 +1,4 @@
-# temp-humidity-tracker-esp32-i2c
+# live-temp-humidity-tracker-with-i2c
 Live temperature & humidity tracking using a microcontroller with an I2C temperature and humidity sensor.
 
 ## live_plotting
