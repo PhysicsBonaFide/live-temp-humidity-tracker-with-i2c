@@ -21,7 +21,7 @@ plots_tab.start_timer(title='Plot Temperature', interval_ms=100)
 plots_tab.add_plot(title='Plot Humidity', x_axis=('Time since present', 'hrs'), y_axis=('RH', '%'), buffer_size=576, csv_filepath=temp_RH_log_filepath, datatype='humidity')
 plots_tab.start_timer(title='Plot Humidity', interval_ms=100)
 
-plots_tab.add_command_button(title='Log Temperature and Humidity', command=f'.venv\Scripts\python.exe live_plotting/log_temp_RH.py {temp_RH_log_filepath} COM5 0.5')
+plots_tab.add_command_button(title='Log Temperature and Humidity', command=fr'.venv\Scripts\python.exe live_plotting/log_temp_RH.py {temp_RH_log_filepath} COM5 300')
 plots_tab.cmd_timer(500)
 
 plotter.run()
