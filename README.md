@@ -14,8 +14,9 @@ After flashing MicroPython onto your microcontroller, copy these files onto it. 
 You may need to change main.py to the address of your I2C sensor and the SDA/SCL pins you are using on your microcontroller.
 
 
-## Important Note!
+## Important Notes!
 
+### Note 1
 While this repo was made specifically for an ESP32, most microcontrollers should also work with little issue. If you are encountering problems, you will likely need to edit some or all of the following files to fit your needs:
 
 microcontroller_files/main.py
@@ -23,3 +24,7 @@ microcontroller_files/main.py
 live_plotting/core_tools/ESP32/ESP32_serial_class.py
 
 live_plotting/core_tools/ESP32/save_temp_RH_readings_functions.py
+
+### Note 2
+
+To run the files in live_plotting, you will need to setup a Python environment and pip install numpy, pandas, pyqtgraph, pyqt5, and pyserial.
